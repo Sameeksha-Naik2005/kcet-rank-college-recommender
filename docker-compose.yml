@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./Backend
+    container_name: kcet-backend
+    ports:
+      - "8000:8000"
+    restart: always
+
+  frontend:
+    build:
+      context: ./Frontend
+    container_name: kcet-frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    restart: always
