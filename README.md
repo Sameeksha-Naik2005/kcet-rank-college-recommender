@@ -1,5 +1,9 @@
 KCET Rank Predictor & College Recommendation Platform 🎓
 
+## Live Demo
+
+[Open the KCET Rank Predictor](https://kcet-frontend.onrender.com)
+
 This is a full-stack Machine Learning project that predicts KCET ranks and recommends engineering colleges using real historical cutoff data.
 The project is built as a proper frontend–backend system using REST APIs and Docker, focusing on how ML applications are actually built and deployed in practice.
 
