@@ -74,6 +74,7 @@ if st.session_state.stage == 1:
             st.session_state.predicted_rank = rank
             st.success(f"✅ Your Predicted Rank: **{rank}**")
             st.session_state.stage = 2
+            st.rerun()
         else:
             st.error("Prediction failed. Backend error.")
 
@@ -99,6 +100,7 @@ elif st.session_state.stage == 2:
             "college_type": college_type
         }
         st.session_state.stage = 3
+        st.rerun()
 
 elif st.session_state.stage == 3:
     st.title("📊 Eligible Colleges for You")

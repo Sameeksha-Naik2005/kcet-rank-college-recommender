@@ -13,6 +13,8 @@ services:
     build:
       context: ./Frontend
     container_name: kcet-frontend
+    environment:
+      BACKEND_URL: http://backend:8000
     ports:
       - "8501:8501"
     depends_on:
